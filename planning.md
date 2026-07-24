@@ -887,6 +887,26 @@ Prepare STAR stories for
 
 ---
 
+# 20 Week Roadmap
+
+A balanced schedule could look like this:
+
+Weeks 1–4: Advanced JavaScript + React
+Weeks 5–7: TypeScript + Redux + APIs + Authentication
+Weeks 8–10: Machine coding
+Weeks 11–13: Frontend system design
+Weeks 14–15: Testing + Performance + AWS + Git
+Weeks 16–18: DSA + Resume + Behavioral stories
+Weeks 19–20: Mock interviews + Company-specific preparation + Applications
+
+--- 
+
+1. Be able to implement 10 machine coding questions from scratch without referring to notes.
+2. Be able to design 10 frontend systems confidently and explain trade-offs.
+3. Solve 80–100 high-quality DSA problems well rather than rushing through 200.
+
+---
+
 # 12 Week Roadmap
 
 ## Week 1
