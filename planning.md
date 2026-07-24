@@ -94,6 +94,16 @@
 21. Resources
 
 ---
+1. Advanced JavaScript
+2. React internals
+3. Machine coding
+4. Frontend system design
+5. TypeScript
+6. Performance optimization
+7. Testing
+8. DSA
+9. AWS and Git (good understanding is sufficient for most frontend interviews)
+---
 
 # Goal
 
