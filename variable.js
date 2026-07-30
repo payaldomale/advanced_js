@@ -27,3 +27,50 @@ console.log(valuee) //100
 // gives you more predictable behavior. The main advantage is not that
 // let can do more things — both var and let can store values and be reassigned.
 // The difference is how safely they handle scope and declarations.
+
+
+// What is const?
+// const is a block-scoped variable declaration introduced in ES6.
+// Unlike let, it must be initialized at the time of declaration, and its binding cannot be reassigned.
+
+// Objects with const ******************The object is still mutable.*******************
+// Many beginners think const makes an object immutable.
+// It doesn't.
+
+const user = {
+    name: "test user",
+    age: 25,
+}
+console.log(user)
+user.name = "Bob";
+user.age = 26;
+// console.log("name:", user.name)
+console.log(user)
+// console.log("age:", user.age)
+
+user.city = "ngp"
+console.log(user);
+
+// user = {} //TypeError: Assignment to constant variable.
+
+// Array with const
+
+const arr = [1, 2, 3, 4]
+arr.push(5, 6)
+console.log(arr)
+arr.pop()
+console.log(arr)
+// arr = []  //TypeError: Assignment to constant variable.
+// console.log(arr)
+
+// ***************Hoisting is the process by which JavaScript registers variable and function declarations before executing the code.**************
+console.log(a);
+var a = 1;
+
+// ******************************TDZ(let & const)*********************************
+
+// TDZ is the time between entering a scope and reaching the line where a let or const variable is declared.
+
+// TDZ(Temporal Dead Zone) is the period of time when a variable declared with let
+// or const exists but cannot be accessed until the code execution reaches its declaration.
+
