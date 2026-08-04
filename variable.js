@@ -1,3 +1,5 @@
+// ********************Global object property********************************
+
 // why let and const not accessible with window object?
 
 // In browsers, there is a special global object called window.
@@ -73,4 +75,26 @@ var a = 1;
 
 // TDZ(Temporal Dead Zone) is the period of time when a variable declared with let
 // or const exists but cannot be accessed until the code execution reaches its declaration.
+
+
+var a = 1;
+console.log(a)
+
+console.log(test)
+var test;
+console.log(test)
+
+// const pi;
+const pi = 3.14
+console.log(pi)
+
+// let pi = 3
+// var pi = 3
+
+// pi = 3.1
+// console.log(pi)
+
+// const company = "OpenAI";
+// console.log(window.company)
+
 

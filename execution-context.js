@@ -47,3 +47,51 @@ function greek() {
 
 console.log(t);
 let t = 5
+
+
+// Before JavaScript executes this code, it needs to know:
+
+// Where should name be stored?
+// Where should greet function be stored?
+// How can greet() access name?
+// What is the value of this?
+
+// 1. Global Execution Context (GEC)(one per program)
+
+var a = 10;
+
+function greet() {
+    console.log("Hello");
+}
+
+console.log(a);
+
+// Memory
+// --------------------
+// a       -> undefined
+// greet   -> function
+
+// --------------------
+// Code Execution
+
+// Then execution begins.
+
+// What does the Global Execution Context contain ?
+
+// 1. Memory Component
+// 2. Code Component
+// 3. Global Object(this//window)
+
+// *********************************************
+
+// 2. Function Execution Context (FEC)
+
+// When is a Function Execution Context created?
+// Whenever a function is called, not when it is defined.
+// After the function finishes execution, unless referenced data remains alive through mechanisms such as closures.
+
+// *********************************************
+
+// 3. Eval Execution Context
+// It has its own execution context.
+// eval() executes strings as code, it is slow, difficult to optimize, and can introduce security risks if used with untrusted input. It is generally avoided in modern JavaScript.
