@@ -45,7 +45,7 @@ function greek() {
 //     console.log("Hello");
 // }
 
-console.log(t);
+// console.log(t);
 let t = 5
 
 
