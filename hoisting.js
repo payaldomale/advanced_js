@@ -43,3 +43,44 @@ console.log(b);
 console.log(c);
 const c = 10;
 console.log(c);
+
+// **********************Function hoisting**************************
+
+sayHello();
+
+function sayHello() {
+    console.log("Hello");
+}
+
+// Function declarations are hoisted with their full definition.
+// Important: JavaScript does not actually move the code. This is just a mental model. What really happens is that the function is created during the creation phase.
+
+// ****************var****************
+
+sayHello();
+
+var sayHello = function () { // isn't a function its a variable which return undefined so it becomes undefined() thats why it'll give TypeError
+    console.log("Hello");
+};
+
+// TypeError: sayHello is not a function
+
+// ****************let****************
+
+sayHello();
+
+let sayHello = function () { // Temporal Dead Zone
+    console.log("Hello");
+};
+
+// ReferenceError Cannot access 'sayHello' before initialization
+
+// ****************const****************
+
+sayHello();
+
+const sayHello = function () { // Temporal Dead Zone
+    console.log("Hello");
+};
+
+// ReferenceError Cannot access 'sayHello' before initialization
