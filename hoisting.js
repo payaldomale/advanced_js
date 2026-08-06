@@ -4,6 +4,11 @@
 
 // "Variable is hoisted means it is declared without initialized"(only for var not for let and const)
 
+// var    → exists + undefined
+// let    → exists + TDZ
+// const  → exists + TDZ
+// function declaration → exists + full function
+
 var a;          // hoisted
 console.log(a); // undefined
 a = 10;
