@@ -1,7 +1,5 @@
 // ***********************Closures****************************
 
-// Now we can understand closures.
-
 // Definition:
 // A closure is a function that remembers the variables from its lexical scope even after the outer function has finished executing.
 
@@ -81,3 +79,18 @@ a.get();
 b.get();
 
 
+function Out() {
+    let count = 0;
+    return function () {
+        count++;
+        console.log("understand closures:", count);
+    }
+}
+
+const counterr = Out();
+
+counterr();
+counterr();
+counterr();
+
+// Out(); //will not print anything
